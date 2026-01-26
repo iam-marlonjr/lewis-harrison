@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+	/* Custom brand colors */
+	--color-Night: #0A0A0A;
+	--color-EerieBlack: #191919;
+	--color-Timberwolf: #CED0CE;
+	--color-Platinum: #E6E8E6;
+	--color-White: #FFFFFF;
+	--color-Vermilion: #F04939;
+	--color-Zinc: #FAFAFA;
+	--color-Black: #000000;
+	--color-Gray: #A1A1A1;
+	--color-blueLagoon: #00A6FB;
+	--color-Parchment: #EDEDE9;
+
+
+	/* Tailwind color mappings */
+	--color-night: var(--color-Night);
+	--color-eerie-black: var(--color-EerieBlack);
+	--color-timberwolf: var(--color-Timberwolf);
+	--color-platinum: var(--color-Platinum);
+	--color-white: var(--color-White);
+	--color-vermilion: var(--color-Vermilion);
+	--color-zinc: var(--color-Zinc);
+	--color-black: var(--color-Black);
+	--color-gray: var(--color-Gray);
+	--color-blue-lagoon: var(--color-blueLagoon);
+	--color-parchment: var(--color-Parchment);
+}
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
