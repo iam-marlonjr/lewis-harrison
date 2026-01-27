@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 ---
 
 <html lang="en">
@@ -14,10 +15,24 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 	<MainLayout>
 		<body>
-			<section class="flex flex-col w-full h-screen items-center mt-[64px] pt-6">
-				<h1>Astro</h1>
-			</section>
+			<section class="flex w-full h-screen items-center justify-center pt-6">
+				<container class="flex w-[1080px] h-full">
+					<div class="flex flex-col w-full h-full items-center justify-center">
+						<h1>2026</h1>
+						<h2>Lewis-Harrison Family</h2>
 
+					</div>
+					<div class="flex flex-col w-full h-full items-center justify-center">
+						<div class="flex w-90 h-120 rounded-[20px] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.55)]">
+							<img 
+								src={SankofaBackground}
+								alt="Ghanaian Sankofa Designed Background"
+								class="w-full h-full object-cover"
+								/>
+						</div>
+					</div>
+				</container>
+			</section>
 		</body>
 	</MainLayout>
 
