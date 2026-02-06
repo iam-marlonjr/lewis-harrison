@@ -29,3 +29,8 @@
 * {
 	font-family: 'Poppins', sans-serif;
 }
+
+.font-sankofa,
+.font-sankofa * {
+	font-family: 'Sankofa Display', sans-serif;
+}
