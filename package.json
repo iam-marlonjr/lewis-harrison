@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.12",
+    "@fontsource/sankofa-display": "^5.2.7",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.15",
     "latest": "^0.2.0"
