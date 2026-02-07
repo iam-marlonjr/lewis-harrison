@@ -17,9 +17,21 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 		<body>
 			<section class="flex w-full h-screen items-center justify-center pt-6">
 				<container class="flex w-[1080px] h-full">
-					<div class="flex flex-col w-full h-full items-center justify-center">
-						<h1 class="text-[10em] font-bold"><span class="year-highlight">20</span>26</h1>
-						<h2>Lewis-Harrison Family</h2>
+					<div class="flex flex-col w-full h-full justify-center px-6">
+						<h1 class="text-[14em] font-semibold leading-none"><span class="year-highlight">20</span>26</h1>
+						<h2 class="text-[1.5em] text-gray-700">As a family, we look to the past to inform the future we create for the next generation.</h2>
+						<div class="flex flex-col w-full items-center justify-center mt-8 mb-8">
+							<p class="text-[1.5em] text-gray-700">
+								June 20-23, 2026
+							</p>
+							<p class="text-[1.5em] text-gray-700">
+								Lake Charles, LA
+							</p>
+						</div>
+						<button class="white-button">
+							Register Today
+						</button>
+
 
 					</div>
 					<div class="flex flex-col w-full h-full items-center justify-center">
@@ -47,6 +59,21 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.white-button {
+	padding: 4px;
+	background-color: transparent;
+	background: linear-gradient(white, white) padding-box,
+				linear-gradient(90deg, #F10B09, #FD8E00, #F8C001, #52B757) border-box;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	color: transparent;
+
+}
+
+.white-button:hover {
+	background-color:
 }
 
 </style>
