@@ -24,6 +24,8 @@
 	--color-periwinkle: var(--color-Periwinkle);
 	--color-moss-green: var(--color-MossGreen);
 	--color-school-bus-yellow: var(--color-SchoolBusYellow);
+
+	--gradient-brand: linear-gradient(90deg, #F10B09, #FD8E00, #F8C001, #52B757);
 }
 
 * {
