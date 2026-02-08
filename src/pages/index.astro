@@ -15,14 +15,16 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 
 	<MainLayout>
 		<body>
-			<section class="section">
-				<container class="flex w-[1080px] h-full">
+
+			<!-- Hero -->
+			<section class="section" style={`--sankofa-bg: url(${SankofaBackground})`}>
+				<div class="container flex w-[1080px] h-full">
 					<div class="flex flex-col w-full h-full items-center justify-center px-6">
 						<h1 class="text-[14em] font-semibold leading-none"><span class="year-highlight">20</span>26</h1>
 						<h2 class="text-center text-[1.5em] text-gray-700">As a family, we look to the past to inform the future we create for the next generation</h2>
 						<div class="flex flex-col w-full items-center justify-center mt-8 mb-8">
 							<p class="text-[1.5em] text-gray-700">
-								June 20-23, 2026
+								June 19-21, 2026
 							</p>
 							<p class="text-[1.5em] text-gray-700">
 								Lake Charles, LA
@@ -35,43 +37,126 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 					<div class="flex flex-col w-full h-full items-center justify-center relative">
 						<div class="hero-card-wrapper">
 							<div class="flex w-90 h-120 rounded-[20px] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.55)]">
-								<img 
+								<img
 									src={SankofaBackground}
 									alt="Ghanaian Sankofa Designed Background"
 									class="w-full h-full object-cover"
-									/>
+								/>
 							</div>
 							<div class="placeholder-image-box" aria-hidden="true">
 								<span class="placeholder-image-box-label">Image</span>
 							</div>
 						</div>
 					</div>
-				</container>
+				</div>
 			</section>
-			<section class="section">
-				<container class="flex w-full max-w-[1280px] h-full">
+
+			<!-- Schedule & Details -->
+			<section id="details" class="section">
+				<div class="container flex flex-col w-full max-w-[1280px] h-full gap-6">
+					<div class="flex flex-col w-full h-full items-center justify-center mb-10">
+						<h3 class="text-[3em] font-semibold text-[#333333]">Schedule & Details</h3>
+						<p class="text-[2em] text-[#333333]/80 text-center">Three days of Connection, Celebration, and Reunion</p>
+					</div>
 					<div class="flex flex-row w-full h-full items-center justify-between gap-4">
 						<div class="details-card">
 							<div class="date-tab">
-								<p>Tuesday, Jun. 20</p>
+								<p>Friday, Jun. 19</p>
 								<p>8am - 5pm</p>
 							</div>
 							<h4 class="text-[2.5em] font-semibold text-[#333333] mb-6">Reception</h4>
-							<div class="flex flex-col w-full h-[15em] items-center justify-center gap-4 bg-(--color-deep-saffron)/60 rounded-[20px] p-4 border-4 border-(--color-deep-saffron) shadow-[0_4px_12px_rgba(0,0,0,0.25)]">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 " fill="#303030">
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
 									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
 								</svg>
-								<p class="text-[1.5em] text-[#303030] text-center">Join us for a welcome reception at the hotel</p>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
+							</div>
+							<div class="event-tab">
+								Lunch
+							</div>
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
+									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
+								</svg>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
 							</div>
 						</div>
 						<div class="details-card">
-							div
+							<div class="date-tab">
+								<p>Saturday, Jun. 20</p>
+								<p>8am - 5pm</p>
+							</div>
+							<h4 class="text-[2.5em] font-semibold text-[#333333] mb-6">Reunion</h4>
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
+									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
+								</svg>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
+							</div>
+							<div class="event-tab">
+								Lunch
+							</div>
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
+									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
+								</svg>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
+							</div>
 						</div>
 						<div class="details-card">
-							div
+							<div class="date-tab">
+								<p>Sunday, Jun. 21</p>
+								<p>8am - 5pm</p>
+							</div>
+							<h4 class="text-[2.5em] font-semibold text-[#333333] mb-6">Reception</h4>
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
+									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
+								</svg>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
+							</div>
+							<div class="event-tab">
+								Lunch
+							</div>
+							<div class="event-card">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-15 h-15 opacity-60" fill="#303030">
+									<path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM280 400C266.7 400 256 410.7 256 424C256 437.3 266.7 448 280 448L360 448C373.3 448 384 437.3 384 424C384 410.7 373.3 400 360 400L352 400L352 312C352 298.7 341.3 288 328 288L280 288C266.7 288 256 298.7 256 312C256 325.3 266.7 336 280 336L304 336L304 400L280 400zM320 256C337.7 256 352 241.7 352 224C352 206.3 337.7 192 320 192C302.3 192 288 206.3 288 224C288 241.7 302.3 256 320 256z"/>
+								</svg>
+								<p class="text-[1.5em] text-[#303030]/90 text-center font-semibold">Join us for a welcome reception at the hotel</p>
+							</div>
 						</div>
 					</div>
-				</container>
+				</div>
+			</section>
+
+			<!-- Hotel Information -->
+			<section id="hotel" class="section">
+				<div class="container flex flex-col w-full max-w-[1280px] h-full gap-6">
+					<div class="flex flex-col w-full h-full items-center justify-center mb-10">
+						<h3 class="text-[3em] font-semibold text-[#333333]">Hotels & Accommodations</h3>
+						<p class="text-[2em] text-[#333333]/80 text-center">Plan your stay for the weekend</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Explore -->
+			<section id="explore" class="section">
+				<div class="container flex flex-col w-full max-w-[1280px] h-full gap-6">
+					<div class="flex flex-col w-full h-full items-center justify-center mb-10">
+						<h3 class="text-[3em] font-semibold text-[#333333]">Explore the Area</h3>
+						<p class="text-[2em] text-[#333333]/80 text-center">Lake Charles has a lot to offer</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact" class="section">
+				<div class="container flex flex-col w-full max-w-[1280px] h-full gap-6">
+					<div class="flex flex-col w-full h-full items-center justify-center mb-10">
+						<h3 class="text-[3em] font-semibold text-[#333333]">Contact</h3>
+						<p class="text-[2em] text-[#333333]/80 text-center">Get in touch</p>
+					</div>
+				</div>
 			</section>
 		</body>
 	</MainLayout>
@@ -79,20 +164,18 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 </html>
 
 <style>
-
 	.section {
 		display: flex;
 		width: 100%;
 		height: 100vh;
 		align-items: center;
 		justify-content: center;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-inline: 1rem;
 	}
 
 	.year-highlight {
-		background-image: url('src/assets/background/Sankofa-Background.png'); /* or the imported URL */
-		background-size: cover;   /* or contain / specific size */
+		background-image: var(--sankofa-bg);
+		background-size: cover;
 		background-position: center;
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -112,20 +195,20 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 		top: -1rem;
 		width: 22.5rem;
 		height: 30rem;
-		background: var(--color-Platinum);
-		border: 2px dashed var(--color-Timberwolf);
-		border-radius: 12px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background: var(--color-Platinum);
+		border: 2px dashed var(--color-Timberwolf);
+		border-radius: 12px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 		z-index: 10;
 	}
 
 	.placeholder-image-box-label {
 		font-size: 0.875rem;
-		color: var(--color-Timberwolf);
 		font-weight: 500;
+		color: var(--color-Timberwolf);
 	}
 
 	.details-card {
@@ -134,9 +217,10 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 		width: 100%;
 		align-items: center;
 		justify-content: center;
-		border-radius: 20px;
+		gap: 1rem;
+		padding: 1rem;
 		background-color: white;
-		padding: 1rem;        /* p-4 = 1rem */
+		border-radius: 20px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 	}
 
@@ -145,24 +229,23 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 		transform: translateY(-50%);
 		display: flex;
 		flex-direction: column;
-		width: 75%;           /* w-3/4 */
+		width: 75%;
 		align-items: center;
 		justify-content: center;
-		border-radius: 9999px; /* rounded-full */
+		padding: 0.5rem 1rem;
 		background: linear-gradient(90deg, #F10B09, #FD8E00);
-		padding: 0.5rem 1rem;  /* py-2 px-4 */
+		border-radius: 9999px;
 	}
 
 	.date-tab > p:first-child {
 		color: white;
-		font-size: 1.25rem;    /* text-xl */
-		font-weight: 600;     /* font-semibold */
+		font-size: 1.25rem;
+		font-weight: 600;
 	}
 
 	.date-tab > p:last-child {
-		color: rgb(255 255 255 / 0.6);  /* text-white/60 */
-		font-size: 1.125rem;   /* text-lg */
-		font-weight: 500;      /* font-medium */
+		color: rgb(255 255 255 / 0.8);
+		font-size: 1.125rem;
+		font-weight: 500;
 	}
-
 </style>
