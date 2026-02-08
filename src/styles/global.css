@@ -36,3 +36,40 @@
 .font-sankofa * {
 	font-family: 'Sankofa Display', sans-serif;
 }
+
+.white-button {
+	padding: 4px;
+	cursor: pointer;
+	background: var(--color-White);
+	border: 2px solid transparent;
+	border-color: var(--color-PureRed);
+	border-radius: 10px;
+	color: var(--color-PureRed);
+	transition: all 0.3s ease-in-out;
+}
+
+.white-button:hover {
+	background: var(--color-PureRed);
+	color: var(--color-White);
+	transition: all 0.3s ease-in-out;
+}
+
+.menu-red-button {
+  position: relative;
+  z-index: 10;
+  padding: 0.25rem 1rem;  /* py-1 px-4 */
+  cursor: pointer;
+  font-size: 1rem;       /* text-md */
+  color: white;
+  font-weight: 500;
+  background-color: color-mix(in srgb, var(--color-PureRed) 65%, transparent);
+  border-radius: 10px;
+  border: 2px solid var(--color-PureRed);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.menu-red-button:hover {
+  background-color: color-mix(in srgb, var(--color-PureRed) 90%, transparent);
+  border-color: var(--color-PureRed);
+}
+
