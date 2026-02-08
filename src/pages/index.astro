@@ -52,7 +52,7 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 			</section>
 
 			<!-- Schedule & Details -->
-			<section id="details" class="section">
+			<section id="details" class="section" style={`--sankofa-bg: url(${SankofaBackground})`}>
 				<div class="container flex flex-col w-full max-w-[1280px] h-full gap-6">
 					<div class="flex flex-col w-full h-full items-center justify-center mb-10">
 						<h3 class="text-[3em] font-semibold text-[#333333]">Schedule & Details</h3>
@@ -233,18 +233,39 @@ import SankofaBackground from '../assets/background/Sankofa-Background.png?url';
 		align-items: center;
 		justify-content: center;
 		padding: 0.5rem 1rem;
-		background: linear-gradient(90deg, #F10B09, #FD8E00);
+		--border-w: 6px;
+		background: var(--sankofa-bg);
+		background-size: cover;
+		color: var(--color-Night);
+		border: none;
 		border-radius: 9999px;
+		overflow: hidden;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+	}
+
+	.date-tab::before {
+		content: '';
+		position: absolute;
+		inset: var(--border-w);
+		background: white;
+		border-radius: 9999px;
+		z-index: 0;
+	}
+
+	.date-tab > p {
+		position: relative;
+		z-index: 1;
 	}
 
 	.date-tab > p:first-child {
-		color: white;
+		color: var(--color-Night);
 		font-size: 1.25rem;
 		font-weight: 600;
 	}
 
 	.date-tab > p:last-child {
-		color: rgb(255 255 255 / 0.8);
+		color: var(--color-Night);
+		opacity: 0.85;
 		font-size: 1.125rem;
 		font-weight: 500;
 	}
